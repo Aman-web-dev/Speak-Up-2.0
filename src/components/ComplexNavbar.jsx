@@ -244,7 +244,7 @@ export function ComplexNavbar() {
       <div className="relative mx-auto flex items-center text-blue-gray-900">
         <Typography
           as="a"
-          href="#"
+          href="/"
           className="mr-4 flex flex-row ml-2 cursor-pointer py-1.5 font-medium font-bold"
         >
           Speak-Up <a className="h-4 w-4" href="">{<ChatBubbleOvalLeftIcon/>}</a> 

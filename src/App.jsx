@@ -11,23 +11,45 @@ import Testimonials from './Pages/Testimonials'
 import Features from './Pages/Features'
 import Free from './Pages/Free' 
 import Facts from './Pages/Facts'
+import Popularity from './Pages/Popularity'
+import Info from './Pages/Info'
+import Carosel from './Pages/Carousel'
+import LanguageSlider from './Pages/LanguageSlider'
+import Categories from './Pages/Categories'
+import Video from './Pages/videos'
+import Player from './Pages/Player'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
 
 function App() {
 
   return (
-    <div className='bg-white'>
-    <ComplexNavbar/>
-         <Hero/>
-        <Features/>
-        <CardHolder/>
-        <PricingPage/>
-        <Facts/>
-        <Testimonials/>
-        <Free/>
-        <Carousel2/>
+<BrowserRouter>
+<ComplexNavbar/>
+   
+      <Routes>
 
-        <Footer/>
-        </div>
+      <Route path="/" element={<div className='bg-white'>
+    <Hero/>
+    <Features/>
+    <CardHolder/>
+    <PricingPage/>
+    <Video/>
+    {/* <Carosel/> */}
+    <LanguageSlider/>
+    <Categories/>
+    <Facts/>
+    <Testimonials/>
+    <Popularity/>
+    <Free/>
+    <Info/>
+    </div>}/>
+          <Route path="/player" element={<Player />} />
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
+
   )
 }
 
