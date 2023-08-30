@@ -14,7 +14,7 @@ function Testimonials() {
 				<div className="grid gap-4 md:grid-cols-2">
 					<div className="grid content-center gap-4">
 						<div className="p-6 rounded shadow-md dark:bg-gray-900 transform hover:-translate-y-2 transition-transform">
-							<p>An audire commodo habemus cum. Ne sed corrumpit repudiandae. Tota aliquip democritum pro in, nec democritum intellegam ne. Propriae volutpat dissentiet ea sit, nec at lorem inani tritani, an ius populo perfecto vituperatoribus. Eu cum case modus salutandi, ut eum vocent sensibus reprehendunt.</p>
+							<p>"Enrolling my daughter in Speak-up's language courses was a game-changer. Not only did she master a new language, but she also gained a global perspective that's invaluable. As a parent, I'm thrilled with the results and the dedicated teaching approach."</p>
 							<div className="flex items-center mt-4 space-x-4">
 								<img src="https://source.unsplash.com/50x50/?portrait?1" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
 								<div>
@@ -24,7 +24,7 @@ function Testimonials() {
 							</div>
 						</div>
 						<div className="p-6 rounded shadow-md dark:bg-gray-900 transform hover:-translate-y-2 transition-transform">
-							<p>Sit wisi sapientem ut, pri civibus temporibus voluptatibus et, ius cu hinc fabulas. Nam meliore minimum et, regione convenire cum id. Ex pro eros mucius consectetuer, pro magna nulla nonumy ne, eam putent iudicabit consulatu cu.</p>
+							<p>"I'm amazed by the progress my son made after joining Speak-up's language classes. The interactive lessons and skilled instructors made learning a new language an enjoyable experience. The confidence he's gained has not only helped academically but also in his personal growth."</p>
 							<div className="flex items-center mt-4 space-x-4">
 								<img src="https://source.unsplash.com/50x50/?portrait?2" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
 								<div>
@@ -36,7 +36,7 @@ function Testimonials() {
 					</div>
 					<div className="grid content-center gap-4">
 						<div className="p-6 rounded shadow-md dark:bg-gray-900 transform hover:-translate-y-2 transition-transform">
-							<p>Putant omnium elaboraret per ut. Id dicta tritani nominavi quo, mea id justo errem elaboraret. Agam mollis scripserit ea his, ut nec postea verear persecuti. Ea noster senserit eam, ferri omittantur ei nec. Id mel solet libris efficiantur, commune explicari et eos. Case movet ad est, sed tota vocent appetere ea.</p>
+							<p>"Speak-up has transformed the way my child perceives languages. The tailored curriculum and engaging teaching methods have ignited a passion for learning and exploring diverse cultures. The language skills acquired here have opened up exciting opportunities for my child's future."</p>
 							<div className="flex items-center mt-4 space-x-4">
 								<img src="https://source.unsplash.com/50x50/?portrait?3" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
 								<div>
@@ -46,7 +46,7 @@ function Testimonials() {
 							</div>
 						</div>
 						<div className="p-6 rounded shadow-md dark:bg-gray-900 transform hover:-translate-y-2 transition-transform">
-							<p>Te omnes virtute volutpat sed. Ei esse eros interesset vel, ei populo denique ocurreret vix, eu cum pertinax mandamus vituperatoribus. Solum nihil luptatum per ex, ei amet viderer eos. Ea illum labitur mnesarchum pro. Eius meis salutandi ei nam, alterum expetenda et nec. Expetenda intellegat at eum, per mazim sanctus honestatis ad. Ei noluisse invenire vix. Te ancillae patrioque qui, probo bonorum vivendum ex vim.</p>
+							<p>"Choosing Speak-up for my daughter's language education was a wise decision. The teachers' commitment to fostering language proficiency along with their nurturing approach made all the difference. I've watched my daughter's language skills flourish, giving her a competitive edge in this interconnected world."</p>
 							<div className="flex items-center mt-4 space-x-4">
 								<img src="https://source.unsplash.com/50x50/?portrait?4" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
 								<div>

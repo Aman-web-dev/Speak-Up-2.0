@@ -26,7 +26,7 @@ function CardHolder() {
     <div className='w-[90vw] my-5 flex flex-col m-auto flex-center p-2 bg-white'> 
     
 <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Language Courses</h1>
-<p className="mb-6 text-lg font-normal text-black lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+<p className="mb-6 text-lg font-normal text-black lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Welcome to our Speak-Up based in Delhi, India! We specialize in offering a range of international language courses that cater to diverse learning needs. Whether you're a college student looking to enhance your language skills or an aspiring web developer seeking to broaden your horizons, our courses provide a comprehensive and interactive learning experience.</p>
 <a href="#" className="inline-flex  my-2 m-auto  items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
     Learn more
     <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

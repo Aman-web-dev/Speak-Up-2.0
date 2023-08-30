@@ -109,7 +109,7 @@ function Hero() {
                     </button>
                   </div>
                   <p className="text-xs text-gray-600 sm:text-sm">
-                    We respect your privacy. Unsubscribe at any time.
+                    Speak-Up respects your privacy. Unsubscribe at any time.
                   </p>
                 </form>
               </div>
