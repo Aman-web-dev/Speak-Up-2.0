@@ -10,6 +10,7 @@ import { ComplexNavbar } from './components/ComplexNavbar'
 import Testimonials from './Pages/Testimonials'
 import Features from './Pages/Features'
 import Free from './Pages/Free' 
+import Facts from './Pages/Facts'
 
 function App() {
 
@@ -17,10 +18,11 @@ function App() {
     <div className='bg-white'>
     <ComplexNavbar/>
          <Hero/>
+        <Features/>
         <CardHolder/>
         <PricingPage/>
+        <Facts/>
         <Testimonials/>
-        <Features/>
         <Free/>
         <Carousel2/>
 

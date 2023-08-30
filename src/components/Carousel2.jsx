@@ -2,6 +2,7 @@ import React from 'react'
 import photo1 from '../assets/girl.jpg'
 
 function Carousel2() {
+    const pic=''
   return (
     <div>
       

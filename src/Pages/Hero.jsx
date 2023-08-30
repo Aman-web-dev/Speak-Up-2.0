@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div className=' bg-gray-500'>
+    <div >
 
     <div className="relative bg-blue-600 border-black">
       <img
@@ -12,8 +12,8 @@ function Hero() {
       />
       <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
         <svg
-          className="absolute inset-x-0 bottom-0 text-white"
-          viewBox="0 0 1160 163"
+          className="absolute inset-x-0 bottom-0 text-white "
+          viewBox="0 0 1160 162"
         >
           <path
             fill="currentColor"
@@ -21,18 +21,17 @@ function Hero() {
           />
         </svg>
         <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-          <div className="flex flex-col items-center justify-between xl:flex-row">
+          <div className="flex flex-col items-center justify-between xl:flex-row ">
             <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
               <h2 className="max-w-lg mb-6 font-sans text-6xl font-bold tracking-tight text-blue-300 sm:text-4xl sm:leading-none">
-                Start Your Language Journey With  <br className="hidden md:block" />
-                Speak-Up
+                
               </h2>
               <p className="max-w-xl mb-4 text-base text-white md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                {/* Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudan, totam rem aperiam, eaque ipsa
-                quae.
+                quae. */}
               </p>
-              <a
+              {/* <a
                 href="/"
                 aria-label=""
                 className="inline-flex text-white bg-blue-600 px-2 p-3 rounded-lg items-center font-xl tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
@@ -45,7 +44,7 @@ function Hero() {
                 >
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
                 </svg>
-              </a>
+              </a> */}
             </div>
             <div className="w-full max-w-xl xl:px-8 xl:w-5/12 transform hover:-translate-y-2 transition-transform text-black">
               <div className="bg-white rounded shadow-2xl p-7 sm:p-10">
