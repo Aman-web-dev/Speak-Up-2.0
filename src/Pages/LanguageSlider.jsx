@@ -1,22 +1,13 @@
-import React,{ useState } from 'react'
+import React,{ useState, useEffect } from 'react'
 import Slider from 'react-slick';
-  
 import '../App.css'
 import { dataDigitalBestSeller } from '../assets/Data';
-// import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-// import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-
-
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
-import imgGirl from '../assets/img1.svg'
-
+import imgGirl from '../assets/img1.svg';
 
 
 const CustomPrevArrow = (props) => {
-  const { className, style, onClick } = props;
-
-
   return (
     <div className="arrow-next slick-prev bg-gray-500 rounded-full hover:bg-gray-700" onClick={props.onClick}>
       <KeyboardArrowLeftIcon />
@@ -25,7 +16,6 @@ const CustomPrevArrow = (props) => {
 };
 
 const CustomNextArrow = (props) => {
-  const { className, style, onClick } = props;
   return (
     <div
     className="arrow-left slick-next bg-gray-500 rounded-full hover:bg-gray-700 " onClick={props.onClick}
@@ -38,9 +28,21 @@ const CustomNextArrow = (props) => {
 
 export default function LanguageSlider() {
   const [defaultImage, setDefaultImage] = useState({});
+
+  const [width, setWidth] =  useState(window.innerWidth);
+  useEffect(() => {
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  };
+
+  window.addEventListener("resize", handleResize);
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []);
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 3,
@@ -95,8 +97,8 @@ export default function LanguageSlider() {
 
     <div className="App my-2">
       <Slider {...settings}
-      prevArrow={<CustomPrevArrow />}
-      nextArrow={<CustomNextArrow />} className=''>
+      prevArrow={(width > 750) ? <CustomPrevArrow /> : '' }
+      nextArrow={(width > 750) ? <CustomNextArrow /> : ''} className=''>
         {dataDigitalBestSeller.map((item) => (
           <div className="card-language">
             <div className="card-top">

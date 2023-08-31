@@ -1,22 +1,103 @@
-import React from 'react';
 import data from '../assets/data.json';
-import Card from '../components/VideoCard'
-import { useNavigate } from 'react-router-dom';
+import React,{ useState, useEffect } from 'react'
+import Slider from 'react-slick';
+import '../../src/App.css'
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
+import imgGirl from '../assets/img1.svg'
+import { Link } from 'react-router-dom';
 
-function Video() {
-  const navigate = useNavigate();
 
-  const handleClick = async(e) => {
-    const videoUrl = e.target.id;
-    console.log(videoUrl);
-     sessionStorage.setItem('videoUrl', videoUrl);
+
+const CustomPrevArrow = (props) => {
+  return (
+    <div className="arrow-next slick-prev bg-gray-500 rounded-full hover:bg-gray-700" onClick={props.onClick}>
+      <KeyboardArrowLeftIcon />
+    </div>
+  );
+};
+
+const CustomNextArrow = (props) => {
+  return (
+    <div
+    className="arrow-left slick-next bg-gray-500 rounded-full hover:bg-gray-700" onClick={props.onClick}
+    >
+      <KeyboardArrowRightIcon />
+    </div>
+  );
+};
+
+
+const handleClick=(e)=>{
+const url=e.target.id;
+console.log(url)
+sessionStorage.setItem('videoUrl',url);
+}
+
+
+export default function LanguageSlider() {
+  const [defaultImage, setDefaultImage] = useState({});
+
+  const [width, setWidth] =  useState(window.innerWidth);
+useEffect(() => {
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  };
+
+  window.addEventListener("resize", handleResize);
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []);
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 670,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const handleErrorImage = (data) => {
+    setDefaultImage((prev) => ({
+      ...prev,
+      [data.target.alt]: data.target.alt,
+      linkDefault: imgGirl,
+    }));
   };
 
   return (
-    <div className='p-4'>
-
-<h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Demo Videos </h1>
-<p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Watch These Demo Courses to Know what you Gonna Get In future. Hole your Breath and Wait for the immerse Experience. </p>
+    <section className='w-full bg-gray-100 p-12'>
+      
+<h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Demo Videos</h1>
+<p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Watch These Demo Videos To have a Clear View On whats you Going to get In Our prestige Courses.</p>
 <a href="#" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
     Learn more
     <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -24,21 +105,37 @@ function Video() {
   </svg>
 </a>
 
-    <div className='grid my-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4  m-auto w-[90vw]'>
-      {data.map((elem) => (
-        <div key={elem.url} onClick={handleClick} id={elem.url}>
-          <Card
-            thumbnail={elem.thumbnail}
-            description={elem.description}
-            price={elem.price}
-            title={elem.title}
-            url={elem.url}
-          />
-        </div>
-      ))}
-    </div>
-    </div>
-  );
-}
+    <div className="App my-2">
+      <Slider {...settings}
+      prevArrow={(width > 750 ) ? <CustomPrevArrow /> : '' }
+      nextArrow={(width > 750) ? <CustomNextArrow /> : ''} className=''>
+        {data.map((item) => (
+          <Link to={'/player'} showDots={false}>
+          <div className="card-language">
+          
+              <div className="card-top">
+              <img
+              id={item.url}
+              src={item.thumbnail}
+              alt={item.title}
+              onError={handleErrorImage}
+              onClick={(e)=>handleClick(e)}
+            />
+             </div>
 
-export default Video;
+            <div className="card-content">
+              <h2 className="card-title">{item.title}</h2>
+            </div>
+            <div className="card-bottom">
+              <h5>{item.price}</h5>
+            </div>
+          </div>
+          
+
+          </Link>
+        ))}
+      </Slider>
+      </div>
+    </section>
+  )
+}

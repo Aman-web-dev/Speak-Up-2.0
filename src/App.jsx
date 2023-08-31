@@ -16,10 +16,22 @@ import Categories from './Pages/Categories'
 import Video from './Pages/videos'
 import Player from './Pages/Player'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import ReviewCarousel from '../src/components/ReviewCarousel'
+import { useState, useEffect } from 'react'
 
 
 function App() {
+  const [width, setWidth] =  useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
 <BrowserRouter>
@@ -31,15 +43,15 @@ function App() {
     <Hero/>
     <Features/>
     <CardHolder/>
-    <PricingPage/>
+    {(width > 850) ? <PricingPage/> : ""}
     <Video/>
     {/* <Carosel/> */}
     <LanguageSlider/>
     <Categories/>
-    <Facts/>
     <Testimonials/>
     <Popularity/>
-    <Free/>
+    {/* <Free/> */}
+    <ReviewCarousel />
     <Info/>
     </div>}/>
           <Route path="/player" element={<Player />} />

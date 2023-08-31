@@ -17,8 +17,9 @@ import React, { useState } from "react";
   return (
 
 
-    <div className="mx-auto w-[100vw] h-[90vh] mt-[3.5625rem] flex max-w-[73.375rem] flex-col items-center justify-center px-4 md:flex-row-reverse md:justify-between md:gap-16 md:px-8">
-      <div className="width-fill-available banner-1 flex-[1.08]">
+    <div className="mx-auto w-[100vw] h-[90vh] mt-[3.5625rem] flex max-w-[73.375rem] flex-col items-center justify-center px-4 md:flex-row-reverse md:justify-between md:gap-16 md:px-8" style={{backgroundColor:"white",color: "black"}}>
+      <div className="width-fill-available banner-1 flex-[1.08] bg-white text-black">
+
         {!subscribed ? (
           <video
             className="rounded-lg shadow-md  top-0 left-0 w-full h-full object-cover"
@@ -29,7 +30,7 @@ import React, { useState } from "react";
           </video>
         ) : (
           <video
-            className="rounded-lg shadow-md  top-0 left-0 w-full h-full object-cover"
+            className="rounded-lg shadow-md  top-0 left-0 w-full h-full object-cover shadow-xl xl:transform xl:hover:-translate-y-2 xl:transition-transform"
             controls
           >
             <source src={videoUrl} type="video/mp4" />
