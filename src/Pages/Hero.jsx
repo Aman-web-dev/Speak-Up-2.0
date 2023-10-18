@@ -1,8 +1,7 @@
 import React from 'react';
-import image from '../../src/assets/homepageimg.svg';
 import logo from '../../src/assets/speakup.jpg';
 import {TypeAnimation} from '../../node_modules/react-type-animation'
-
+import image from '../assets/homepageimgkid.svg'
 
 function HomePage() {
   return (
@@ -14,7 +13,7 @@ function HomePage() {
 
       <main className="flex-grow flex flex-col-reverse lg:flex-row">
         <div className="flex-grow p-8 text-center lg:text-left m-auto">
-          <h1 className=" flex flex-row text-4xl lg:text-7xl font-bold text-blue-500 tracking-wide" style={{fontFamily: 'Tilt Prism'}}>
+          <h1 className=" flex flex-row text-4xl lg:text-7xl font-bold text-blue-900 tracking-wide" style={{fontFamily: 'Tilt Prism'}}>
             Speak-Up
             <img
               src={logo}
@@ -30,7 +29,7 @@ function HomePage() {
             <strong className="text-blue-900"> Learn </strong>
             your favorite <strong className="m-2">Language</strong>
           </h3>
-          <div className="font-mono text-xl lg:text-3xl mt-4 h-[10vh] sm:text-2xl text-black  ">
+          <div className="font-mono text-xl lg:text-3xl mt-4 h-[10vh] sm:text-2xl text-black  my-2">
             <strong className="px-1">
             <TypeAnimation
         sequence={[
@@ -51,7 +50,7 @@ function HomePage() {
           </div>
           <div className="mt-6">
             <a href="/video">
-            <button  className="relative inline-flex items-center justify-center p-2 text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-blue-500 to-gray-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none shadow-md">
+            <button  className="relative inline-flex items-center justify-center p-2 text-lg font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-blue-900 to-gray-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none shadow-md">
               <span href='/video' className="relative px-6 py-3 transition-all ease-in-out duration-75 bg-white dark:bg-gray-800 rounded-md group-hover:bg-opacity-0 font-bold">
                 Get Started{' '}
                 <strong className="font-bold mx-2">&rarr;</strong>
