@@ -33,14 +33,20 @@ function HomePage() {
             <strong className="px-1">
             <TypeAnimation
         sequence={[
+
           'English "hello"',
           3000,
+          'Portugese  "Olá"',
+          3000,
           'Spanish "Hola"',
+          3000,
+          'French "Bonjour"',
           3000,
           'Korean "안녕하세요"',
           3000,
           'Japanese "こんにちは"',
           3000,
+          
         ]}
         speed={50}
         repeat={Infinity}
