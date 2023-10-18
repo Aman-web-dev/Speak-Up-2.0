@@ -240,7 +240,7 @@ export function ComplexNavbar() {
   }, []);
  
   return (
-    <Navbar className=" text-black  w-[90vw] absolute top-3 left-0 right-0 z-10  p-2 m-auto lg:rounded-full lg:pl-6">
+    <Navbar className="fixed text-black  w-[90vw]  top-3 left-0 right-0 z-10  p-2 m-auto lg:rounded-full lg:pl-6 bg-blue-100">
       <div className="relative mx-auto flex items-center text-blue-gray-900">
         <Typography
           as="a"
@@ -261,7 +261,7 @@ export function ComplexNavbar() {
         >
           <Bars2Icon className="h-6 w-6" />
         </IconButton>
-        <ProfileMenu />
+        {/* <ProfileMenu /> */}
       </div>
       <Collapse open={isNavOpen} className="overflow-scroll">
         <NavList />
