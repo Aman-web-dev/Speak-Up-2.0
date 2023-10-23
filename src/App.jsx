@@ -4,7 +4,7 @@ import CardHolder from './Pages/CardHolder'
 import PricingPage from './Pages/PricingPage'
 import Footer from './components/Footer'
 import Hero from './Pages/Hero'
-import { ComplexNavbar } from './components/ComplexNavbar'
+import ComplexNavbar from './components/ComplexNavbar'
 import Testimonials from './Pages/Testimonials'
 import Features from './Pages/Features'
 import Free from './Pages/Free' 
@@ -18,6 +18,10 @@ import Player from './Pages/Player'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReviewCarousel from '../src/components/ReviewCarousel'
 import { useState, useEffect } from 'react'
+import About from './Pages/About'
+import Pricing from './Pages/Pricing'
+import GetStarted from './Pages/GetStarted'
+import Faq from './Pages/Faq'
 
 
 function App() {
@@ -43,7 +47,7 @@ function App() {
     <Hero/>
     <Features/>
     <CardHolder/>
-    {(width > 850) ? <PricingPage/> : ""}
+    {/* {(width > 850) ? <PricingPage/> : ""} */}
     <Video/>
     {/* <Carosel/> */}
     <LanguageSlider/>
@@ -55,6 +59,15 @@ function App() {
     <Info/>
     </div>}/>
           <Route path="/player" element={<Player />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/getstarted" element={<GetStarted />} />
+          <Route path="/faq" element={<Faq />} />
+
+
+
+
+
       </Routes>
       <Footer/>
     </BrowserRouter>
