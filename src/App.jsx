@@ -33,12 +33,13 @@ import Faq from './Pages/Faq'
 function App() {
  
   return (
-<Router>
-<ComplexNavbar/>
-   
-      <Routes>
 
-      <Route path="/" element={<div className='bg-white'>
+    <>
+<ComplexNavbar/>
+<Router>   
+    <Routes>
+
+    <Route path="/" element={<div className='bg-white'>
     <Hero/>
     <Features/>
     <CardHolder/>
@@ -56,9 +57,10 @@ function App() {
           <Route path="/getstarted" element={<GetStarted />} />
           <Route path="/faq" element={<Faq />} />
       </Routes>
-      <Footer/>
     </Router>
+    <Footer/>
 
+    </>
   )
 }
 
