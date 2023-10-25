@@ -63,11 +63,6 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/getstarted" element={<GetStarted />} />
           <Route path="/faq" element={<Faq />} />
-
-
-
-
-
       </Routes>
       <Footer/>
     </BrowserRouter>
