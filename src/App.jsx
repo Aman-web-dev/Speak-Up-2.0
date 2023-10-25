@@ -16,6 +16,12 @@ import Categories from './Pages/Categories'
 import Video from './Pages/videos'
 import Player from './Pages/Player'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import {
+//   createBrowserRouter,
+//   RouterProvider,
+//   Route,
+//   Link,
+// } from "react-router-dom";
 import ReviewCarousel from '../src/components/ReviewCarousel'
 import { useState, useEffect } from 'react'
 import About from './Pages/About'
