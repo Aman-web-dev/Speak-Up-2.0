@@ -15,7 +15,7 @@ import LanguageSlider from './Pages/LanguageSlider'
 import Categories from './Pages/Categories'
 import Video from './Pages/videos'
 import Player from './Pages/Player'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import {
 //   createBrowserRouter,
 //   RouterProvider,
@@ -44,7 +44,7 @@ function App() {
   }, []);
 
   return (
-<BrowserRouter>
+<Router>
 <ComplexNavbar/>
    
       <Routes>
@@ -53,14 +53,11 @@ function App() {
     <Hero/>
     <Features/>
     <CardHolder/>
-    {/* {(width > 850) ? <PricingPage/> : ""} */}
     <Video/>
-    {/* <Carosel/> */}
     <LanguageSlider/>
     <Categories/>
     <Testimonials/>
     <Popularity/>
-    {/* <Free/> */}
     <ReviewCarousel />
     <Info/>
     </div>}/>
@@ -71,7 +68,7 @@ function App() {
           <Route path="/faq" element={<Faq />} />
       </Routes>
       <Footer/>
-    </BrowserRouter>
+    </Router>
 
   )
 }
