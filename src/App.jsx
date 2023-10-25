@@ -15,7 +15,7 @@ import LanguageSlider from './Pages/LanguageSlider'
 import Categories from './Pages/Categories'
 import Video from './Pages/videos'
 import Player from './Pages/Player'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 // import {
 //   createBrowserRouter,
 //   RouterProvider,
@@ -28,6 +28,7 @@ import About from './Pages/About'
 import Pricing from './Pages/Pricing'
 import GetStarted from './Pages/GetStarted'
 import Faq from './Pages/Faq'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 
 function App() {

@@ -38,7 +38,7 @@ export default function Categories({src, name}) {
     <div className="card-container rounded-md">
         {flagData.map((data) => (
 
-<div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 shadow-xl my-2 xl:transform xl:hover:-translate-y-2 xl:transition-transform" key={data.id}>
+<div key={data.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 shadow-xl my-2 xl:transform xl:hover:-translate-y-2 xl:transition-transform" key={data.id}>
 <a href="#">
     <img className="rounded-t-lg" src={data.imgLink} alt={data.name} />
 </a>

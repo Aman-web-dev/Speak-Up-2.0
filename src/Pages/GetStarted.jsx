@@ -4,7 +4,7 @@ function GetStarted() {
   return (
     <div className=''>
       <section className="gradient-form h-full w-[100vw] xl:w-[80vw] lg:w-[100vw]  m-auto  dark:bg-neutral-700">
-  <div className="container h-full p-10 shadow-xl">
+  <div className="container h-full p-10 ">
     <div
       className="g-6 m-auto mx-4 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
       <div className="w-full">
@@ -108,7 +108,7 @@ function GetStarted() {
 
             <div
               className="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
-              style={{background: "linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)"}}>
+              style={{background: "linear-gradient(to right, #2196F3, #d8363a, #dd3675, #b44593)"}}>
               <div className="px-4 py-6 text-white md:mx-6 md:p-12">
                 <h4 className="mb-6 text-xl font-semibold">
                   We are more than just a Teacher
