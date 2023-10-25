@@ -4,12 +4,13 @@ import {TypeAnimation} from '../../node_modules/react-type-animation'
 import image from '../assets/homepageimgkid.svg'
 
 function HomePage() {
+  <head>
+  <title>Speak-Up</title>
+  <link rel="icon" href="/favicon.ico" />
+</head>
   return (
     <div className="flex flex-col min-h-screen">
-      <head>
-        <title>Speak-Up</title>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
+     
 
       <main className="flex-grow flex flex-col-reverse lg:flex-row">
         <div className="flex-grow p-8 text-center lg:text-left m-auto">
