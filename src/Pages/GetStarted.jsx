@@ -4,7 +4,7 @@ function GetStarted() {
   return (
     <div className=''>
       <section className="gradient-form h-full w-[100vw] xl:w-[80vw] lg:w-[100vw]  m-auto  dark:bg-neutral-700">
-  <div className="container h-full p-10">
+  <div className="container h-full p-10 shadow-xl">
     <div
       className="g-6 m-auto mx-4 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
       <div className="w-full">
@@ -38,7 +38,7 @@ function GetStarted() {
                     </label>
                   </div>
 
-                  <div className="relative mb-4" data-te-input-wrapper-init>
+                  <div className="relative mb-4 border" data-te-input-wrapper-init>
                     <input
                       type="text"
                       className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
