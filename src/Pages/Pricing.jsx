@@ -6,8 +6,8 @@ function Pricing() {
       <section class="bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-blue-500 ">Designed for business teams like yours</h1>
-          <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+          <h1 class="mb-4 text-4xl tracking-tight font-extrabold text-blue-500 ">Designed for Learners Like You</h1>
+          <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Unlock the world through language with Speak-up. Discover affordable plans to master international languages and broaden your horizons.</p>
       </div>
       <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">

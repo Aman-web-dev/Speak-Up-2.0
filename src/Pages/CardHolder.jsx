@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
-
+ 
 function CardHolder() {
   const french ="https://img.freepik.com/free-photo/close-up-portrait-young-attractive-woman-holding-her-notebook-isolated-rosy_176532-9669.jpg?w=1480&t=st=1693374829~exp=1693375429~hmac=16bad3622bbb1c1ad9863ee1290119187de816cf0d8bff1cf65ceea61379dd2a"
 
