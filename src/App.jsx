@@ -35,7 +35,7 @@ function App() {
   return (
 
     <>
-<ComplexNavbar/>
+ <ComplexNavbar/>
 <Router>   
     <Routes>
 
@@ -58,7 +58,7 @@ function App() {
           <Route path="/faq" element={<Faq />} />
       </Routes>
     </Router>
-    <Footer/>
+    <Footer/> 
 
     </>
   )
