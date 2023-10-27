@@ -4,7 +4,10 @@ function GetStarted() {
   return (
     <div className=''>
       <section className="gradient-form h-full w-[100vw] xl:w-[80vw] lg:w-[100vw]  m-auto  dark:bg-neutral-700">
-  <div className="container h-full p-10 ">
+        <h1 className='text-blue-400 my-4 text-5xl font-bold'>Register</h1>
+        <h1 className='text-black my-4 text-xl font-bold'>Fill This Form Our representative Will Contact You Soon</h1>
+
+  <div className="container h-full p-10 shadow-xl my-2">
     <div
       className="g-6 m-auto mx-4 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
       <div className="w-full">
@@ -16,15 +19,15 @@ function GetStarted() {
                 <div className="text-center">
                   <img
                     className="mx-auto w-48"
-                    src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                    src="https://firebasestorage.googleapis.com/v0/b/speakup-aa4f8.appspot.com/o/assests%2FSpeak%20Up.png?alt=media&token=35bbef35-844f-4905-804f-d42d3dd18750&_gl=1*3lxcjk*_ga*MjIzNDc0Mzc4LjE2OTgzOTM1ODI.*_ga_CW55HF8NVT*MTY5ODM5MzU4Mi4xLjEuMTY5ODM5MzcyMy4zOS4wLjA."
                     alt="logo" />
-                  <h4 className="mb-12 mt-1 pb-1 text-xl font-semibold">
+                  {/* <h4 className="mb-12 mt-1 pb-1 text-xl font-semibold">
                     We are Speak-Up
-                  </h4>
+                  </h4> */}
                 </div>
 
                 <form>
-                  <p className="mb-4">Please login to your account</p>
+                  <p className="mb-4">Please Register Yourself</p>
                   <div className="relative mb-4 border" data-te-input-wrapper-init>
                     <input
                       type="text"
@@ -83,7 +86,7 @@ function GetStarted() {
                       type="button"
                       data-te-ripple-init
                       data-te-ripple-color="light"
-                      style={{background: "linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)"}}
+                      style={{background: "linear-gradient(to right,#2196F3, #263238 )"}}
                         
                       >
                       Register
@@ -108,7 +111,7 @@ function GetStarted() {
 
             <div
               className="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
-              style={{background: "linear-gradient(to right, #2196F3, #d8363a, #dd3675, #b44593)"}}>
+              style={{background: "linear-gradient(to right, #2196F3, #263238)"}}>
               <div className="px-4 py-6 text-white md:mx-6 md:p-12">
                 <h4 className="mb-6 text-xl font-semibold">
                   We are more than just a Teacher
