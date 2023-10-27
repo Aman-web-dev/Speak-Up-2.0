@@ -84,7 +84,7 @@ export default function LanguageSlider() {
   };
 
   return (
-    <section className='w-full bg-gray-100 p-12'>
+    <section className='w-full  p-12'>
       
 <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Entertainment</h1>
 <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">We Make Students Learning Easy Through Fun based Excercises and Contests .</p>

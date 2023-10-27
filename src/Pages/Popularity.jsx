@@ -4,7 +4,7 @@ import girl from '../assets/girl.jpg'
 function Popularity() {
   return (
     <div>
-<section className="mb-32 text-center lg:text-left text-white bg-gray-100 p-8">
+<section className="mb-32 text-center lg:text-left text-white  p-8">
   <style>
    
   </style>

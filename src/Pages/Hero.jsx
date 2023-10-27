@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../src/assets/speakup.jpg';
 import {TypeAnimation} from '../../node_modules/react-type-animation'
 import image from '../assets/homepageimgkid.svg'
+import TimeTable from '../components/TimeTable';
 
 function HomePage() {
   <head>

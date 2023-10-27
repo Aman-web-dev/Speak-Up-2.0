@@ -17,6 +17,7 @@ import Video from './Pages/videos'
 import Player from './Pages/Player'
 import { Routes, Route } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react'
+import TimeTable from './components/TimeTable'
 // import {
 //   createBrowserRouter,
 //   RouterProvider,
@@ -47,6 +48,7 @@ function App() {
     <CardHolder/>
     <Video/>
     <LanguageSlider/>
+    <TimeTable/>
     <Categories/>
     <Testimonials/>
     <Analytics />
