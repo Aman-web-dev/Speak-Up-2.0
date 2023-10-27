@@ -16,6 +16,7 @@ import Categories from './Pages/Categories'
 import Video from './Pages/videos'
 import Player from './Pages/Player'
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react'
 // import {
 //   createBrowserRouter,
 //   RouterProvider,
@@ -48,6 +49,7 @@ function App() {
     <LanguageSlider/>
     <Categories/>
     <Testimonials/>
+    <Analytics />
     <Popularity/>
     <ReviewCarousel />
     <Info/>

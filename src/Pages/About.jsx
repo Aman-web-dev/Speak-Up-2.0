@@ -1,4 +1,5 @@
 import React from 'react'
+import Calendar from '../components/Calendar'
 
 function About() {
     return (
@@ -72,7 +73,7 @@ function About() {
        
 
 
-          
+          <Calendar/>
 
         </div>
     )
