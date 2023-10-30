@@ -1,5 +1,6 @@
-import { Hardware } from '@mui/icons-material'
+// import { Hardware } from '@mui/icons-material'
 import React from 'react'
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 function Calendar(props) {
     return (
@@ -13,7 +14,7 @@ function Calendar(props) {
                 
                 <p className='text-green-300 '>Starting From Day {props.Day}</p>
             <ul className='text-black'>
-                <li>Item-1</li>
+                <li><CalendarMonthIcon/>Item-1</li>
                 <li>Item-2</li>
                 <li>Item-3</li>
 

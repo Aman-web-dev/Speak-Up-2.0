@@ -1,6 +1,21 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
- function Player (){
+ function Player ({setProgress}){
+
+  useEffect(() => {
+             
+    setProgress(20);
+    setProgress(30);
+    setProgress(40);
+    setProgress(50);
+    setProgress(60);
+    setProgress(70);
+    setProgress(80);
+    setProgress(90);
+    setProgress(100);
+
+}, []);
+
 
   const videoUrl =  sessionStorage.getItem('videoUrl')
 

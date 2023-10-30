@@ -1,6 +1,21 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
-function GetStarted() {
+function GetStarted({setProgress}) {
+
+  useEffect(() => {
+             
+    setProgress(20);
+    setProgress(30);
+    setProgress(40);
+    setProgress(50);
+    setProgress(60);
+    setProgress(70);
+    setProgress(80);
+    setProgress(90);
+    setProgress(100);
+
+}, []);
+
   return (
     <div className=''>
       <section className="gradient-form h-full w-[100vw] xl:w-[80vw] lg:w-[100vw]  m-auto  dark:bg-neutral-700">

@@ -1,7 +1,22 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
-function ComplexNavbar() {
+function ComplexNavbar({setProgress}) {
+
+  useEffect(() => {
+             
+    setProgress(20);
+    setProgress(30);
+    setProgress(40);
+    setProgress(50);
+    setProgress(60);
+    setProgress(70);
+    setProgress(80);
+    setProgress(90);
+    setProgress(100);
+
+}, []);
+
   return (
 
 <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">

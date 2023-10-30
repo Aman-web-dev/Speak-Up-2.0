@@ -1,7 +1,24 @@
-import React from 'react'
+import React ,{useEffect}from 'react'
 import Calendar from '../components/Calendar'
 
-function About() {
+function About({setProgress}) {
+
+     useEffect(() => {
+             
+        setProgress(20);
+        setProgress(30);
+        setProgress(40);
+        setProgress(50);
+        setProgress(60);
+        setProgress(70);
+        setProgress(80);
+        setProgress(90);
+        setProgress(100);
+    
+    }, []);
+
+
+
     return (
         <div className='w-[80vw] m-auto  my-4'>
 

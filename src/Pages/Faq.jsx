@@ -1,6 +1,21 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
-function Faq() {
+function Faq({setProgress}) {
+
+    useEffect(() => {
+             
+        setProgress(20);
+        setProgress(30);
+        setProgress(40);
+        setProgress(50);
+        setProgress(60);
+        setProgress(70);
+        setProgress(80);
+        setProgress(90);
+        setProgress(100);
+    
+    }, []);
+
   return (
     <div>
       <section className="bg-white dark:bg-gray-900">

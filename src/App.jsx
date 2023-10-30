@@ -31,14 +31,23 @@ import Pricing from './Pages/Pricing'
 import GetStarted from './Pages/GetStarted'
 import Faq from './Pages/Faq'
 import { BrowserRouter as Router } from 'react-router-dom'
+import LoadingBar from 'react-top-loading-bar'
 
 
 function App() {
+
+  const [progress, setProgress] = useState(0)
  
   return (
 
     <>
- <ComplexNavbar/>
+      <LoadingBar
+      // height='6'
+        color='#1976D2'
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
+ <ComplexNavbar setProgress={setProgress}/>
 <Router>   
     <Routes>
 
@@ -56,11 +65,11 @@ function App() {
     <ReviewCarousel />
     <Info/>
     </div>}/>
-          <Route path="/player" element={<Player />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/getstarted" element={<GetStarted />} />
-          <Route path="/faq" element={<Faq />} />
+          <Route path="/player" element={<Player setProgress={setProgress}/>} />
+          <Route path="/about" element={<About setProgress={setProgress}/>} />
+          <Route path="/pricing" element={<Pricing setProgress={setProgress}/>} />
+          <Route path="/getstarted" element={<GetStarted setProgress={setProgress}/>} />
+          <Route path="/faq" element={<Faq setProgress={setProgress}/>} />
       </Routes>
     </Router>
     <Footer/> 

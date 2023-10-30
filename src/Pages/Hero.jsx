@@ -17,14 +17,14 @@ function HomePage() {
         <div className="flex-grow p-8 text-center lg:text-left m-auto">
           <h1 className=" flex flex-row text-4xl lg:text-7xl font-bold text-blue-900 tracking-wide" style={{fontFamily: 'Tilt Prism'}}>
             Speak-Up
-            <img
+            {/* <img
               src={logo}
               alt=""
               aria-hidden="true"
               height={80}
               width={80}
               className="mx-auto lg:mx-0"
-            />
+            /> */}
           </h1>
           <h3 className=" text-black text-2xl lg:text-5xl mt-4" style={{fontFamily: "Teko"}}>
             A Place Where you Can{' '}
