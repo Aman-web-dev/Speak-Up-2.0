@@ -18,12 +18,6 @@ import Player from './Pages/Player'
 import { Routes, Route } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react'
 import TimeTable from './components/TimeTable'
-// import {
-//   createBrowserRouter,
-//   RouterProvider,
-//   Route,
-//   Link,
-// } from "react-router-dom";
 import ReviewCarousel from '../src/components/ReviewCarousel'
 import { useState, useEffect } from 'react'
 import About from './Pages/About'
@@ -64,7 +58,8 @@ function App() {
     <Analytics />
     <Popularity/>
     <ReviewCarousel />
-    <Info/>
+    <Free/>
+    {/* <Info/> */}
     </div>}/>
           <Route path="/player" element={<Player setProgress={setProgress}/>} />
           <Route path="/about" element={<About setProgress={setProgress}/>} />
