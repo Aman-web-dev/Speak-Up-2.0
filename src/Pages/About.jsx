@@ -90,7 +90,6 @@ function About({setProgress}) {
        
 
 
-          <Calendar/>
 
         </div>
     )

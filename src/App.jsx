@@ -32,6 +32,7 @@ import GetStarted from './Pages/GetStarted'
 import Faq from './Pages/Faq'
 import { BrowserRouter as Router } from 'react-router-dom'
 import LoadingBar from 'react-top-loading-bar'
+import Updates from './Pages/Updates'
 
 
 function App() {
@@ -70,6 +71,8 @@ function App() {
           <Route path="/pricing" element={<Pricing setProgress={setProgress}/>} />
           <Route path="/getstarted" element={<GetStarted setProgress={setProgress}/>} />
           <Route path="/faq" element={<Faq setProgress={setProgress}/>} />
+          <Route path="/updates" element={<Updates setProgress={setProgress}/>} />
+
       </Routes>
     </Router>
     <Footer/> 
