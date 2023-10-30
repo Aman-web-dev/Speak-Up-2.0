@@ -7,7 +7,7 @@ import { Chair,ArrowForward } from '@mui/icons-material';
 
 function Calendar(props) {
     return (
-        <div className='max-h-[50] max-w-sm lg:w-auto xl:w-auto bg-gray-200 rounded-xl p-2 m-auto p-4 shadow-xl my-4 hover:-translate-y-2 transform transition-transform'>
+        <div className='max-h-[50] max-w-sm lg:w-auto xl:w-auto bg-white rounded-xl p-2 m-auto p-4 shadow-xl my-4 hover:-translate-y-2 transform transition-transform'>
 
 
 
@@ -16,7 +16,7 @@ function Calendar(props) {
             <div id='top-image' className='font-bold text-black my-2'>{props.language}</div>
 
 
-            <div id='top-image' className=' bg-white rounded p-4'>
+            <div id='top-image' className='  rounded p-4'>
                 
                 <p className='text-green-500 font-bold my-2'>Starting From Day {props.Day}</p>
             <ul className='text-black text-justify'>

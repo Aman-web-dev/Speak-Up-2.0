@@ -36,7 +36,7 @@ function HomePage() {
             <TypeAnimation
         sequence={[
 
-          'English "hello"',
+          'English "Hello"',
           3000,
           'Portugese  "Olá"',
           3000,

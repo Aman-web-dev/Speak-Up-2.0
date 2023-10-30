@@ -22,7 +22,7 @@ function GetStarted({setProgress}) {
         <h1 className='text-blue-400 my-4 text-5xl font-bold'>Register</h1>
         <h1 className='text-black my-4 text-xl font-bold'>Fill This Form Our representative Will Contact You Soon</h1>
 
-  <div className="container h-full p-10 shadow-xl my-2">
+  <div className="container h-full p-10  my-2">
     <div
       className="g-6 m-auto mx-4 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
       <div className="w-full">
