@@ -3,7 +3,7 @@ export default function Footer() {
   return (
       <footer className="footer p-10 bg-base-200 text-base-content ">
   <div>
-   <img className="h-11 m-auto align-center justify-center" src="https://firebasestorage.googleapis.com/v0/b/speakup-aa4f8.appspot.com/o/assests%2FSpeak%20Up.png?alt=media&token=35bbef35-844f-4905-804f-d42d3dd18750&_gl=1*3lxcjk*_ga*MjIzNDc0Mzc4LjE2OTgzOTM1ODI.*_ga_CW55HF8NVT*MTY5ODM5MzU4Mi4xLjEuMTY5ODM5MzcyMy4zOS4wLjA." alt="logo"></img>
+   <img className="h-11 m-auto align-center justify-center" src="https://firebasestorage.googleapis.com/v0/b/speakup-aa4f8.appspot.com/o/assests%2Fbg-removed-logo.png?alt=media&token=c3683196-ee90-4b76-a27a-03fcdbb88f3f&_gl=1*11jvoze*_ga*MjIzNDc0Mzc4LjE2OTgzOTM1ODI.*_ga_CW55HF8NVT*MTY5ODY1NzA3OS4zLjEuMTY5ODY1NzE4Ni40Ni4wLjA." alt="logo"></img>
     <p>SULS Private Ltd.<br/>Providing Valuable Education Since 2020  </p>
   </div> 
   <div>

@@ -9,9 +9,9 @@ import heroImage from '../../src/assets/heroImage.svg'
 
 function HomePage() {
   <head>
-  <title>Speak-Up</title>
-  <link rel="icon" href="/favicon.ico" />
-</head>
+    <title>Speak Up</title>
+    <link rel="icon" href="/favicon.ico " />
+  </head>
   return (
     <section className='lg:flex min-h-screen h-auto block bg-white'>
       <div className='lg:w-1/2 w-full text-start my-auto text-4xl text-black font-bold px-16'>
