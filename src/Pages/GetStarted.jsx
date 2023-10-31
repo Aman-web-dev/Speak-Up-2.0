@@ -36,9 +36,7 @@ function GetStarted({setProgress}) {
                     className="mx-auto w-48"
                     src="https://firebasestorage.googleapis.com/v0/b/speakup-aa4f8.appspot.com/o/assests%2FSpeak%20Up.png?alt=media&token=35bbef35-844f-4905-804f-d42d3dd18750&_gl=1*3lxcjk*_ga*MjIzNDc0Mzc4LjE2OTgzOTM1ODI.*_ga_CW55HF8NVT*MTY5ODM5MzU4Mi4xLjEuMTY5ODM5MzcyMy4zOS4wLjA."
                     alt="logo" />
-                  {/* <h4 className="mb-12 mt-1 pb-1 text-xl font-semibold">
-                    We are Speak-Up
-                  </h4> */}
+             
                 </div>
 
                 <form>
