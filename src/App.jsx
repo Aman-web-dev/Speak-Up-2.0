@@ -49,7 +49,7 @@ function App() {
     <Route path="/" element={<div className='bg-white'>
     <Hero/>
     <Features/>
-    <CardHolder/>
+    {/* <CardHolder/> */}
     <Video/>
     <LanguageSlider/>
     <TimeTable/>

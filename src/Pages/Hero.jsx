@@ -42,8 +42,10 @@ function HomePage() {
         style={{ fontSize: '2rem'}}/>
 
 </div>
-            <button className='text-base bg-black px-8 py-2 rounded-full font-normal text-white mt-4'>Get started</button>
-    
+
+<a className='' href='/getstarted'>
+            <button href='/getstarted' className='text-base bg-black px-8 py-2 rounded-full font-normal text-white mt-4'>Get started</button>
+            </a>
       </div>
       <div className="lg:w-1/2 w-full flex justify-center items-center">
         <img src={heroImage} alt="Speak up home image" className='h-[80%] w-[80%] object-cover' />
