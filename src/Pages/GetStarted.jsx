@@ -18,11 +18,11 @@ function GetStarted({setProgress}) {
 
   return (
     <div className=''>
-      <section className="gradient-form h-full w-[100vw] xl:w-[80vw] lg:w-[100vw]  m-auto  dark:bg-neutral-700">
+      <section className="gradient-form h-full w-[100vw] xl:w-[80vw] lg:w-[100vw]  m-auto  dark:bg-neutral-700 m-auto">
         <h1 className='text-blue-400 my-4 text-5xl font-bold'>Register</h1>
         <h1 className='text-black my-4 text-xl font-bold'>Fill This Form Our representative Will Contact You Soon</h1>
 
-  <div className="container h-full p-10  my-2">
+  <div className="container h-full p-10  my-2 m-auto">
     <div
       className="g-6 m-auto mx-4 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
       <div className="w-full">
@@ -30,7 +30,7 @@ function GetStarted({setProgress}) {
           className="block rounded-lg bg-white shadow-lg dark:bg-neutral-800">
           <div className="g-0 lg:flex lg:flex-wrap">
             <div className="px-4 md:px-0 lg:w-6/12">
-              <div className="md:mx-6 md:p-12">
+              <div className="md:mx-6 md:p-12 m-auto">
                 <div className="text-center">
                   <img
                     className="mx-auto w-48"

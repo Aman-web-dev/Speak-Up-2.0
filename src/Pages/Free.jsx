@@ -6,7 +6,7 @@ function Free() {
     <div className='flex'>
     <div className='relative  z-20 w-[100vw] m-auto'>
       
-<a href="#" className="flex  flex-col items-center h-[80vh] xl:h-[60vh] m-auto w-[80vw] sm:h-[90vh]   border border-5px rounded-3xl shadow md:flex-row ">
+<a href="#" className="flex  flex-col items-center h-[80vh] xl:h-[60vh] m-auto w-[80vw] sm:h-[90vh]    rounded-3xl shadow md:flex-row ">
     <img className="object-cover w-[50%]  h-[100%] rounded-3xl " src={women} alt=""/>
     <div className="flex flex-col justify-between p-4 leading-normal">
       
