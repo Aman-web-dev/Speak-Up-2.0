@@ -3,7 +3,7 @@ import image from '../assets/img1.svg';
 
 function Card(props) {
   return (
-    <div className="max-w-full mx-auto my-2 p-2 border border-gray-200 rounded-lg shadow bg-gray-200 xl:transform xl:hover:-translate-y-2 xl:transition-transform bg-gray-200 m-auto">
+    <div className="max-w-full mx-auto my-2 p-2 border border-gray-200 rounded-lg shadow  xl:transform xl:hover:-translate-y-2 xl:transition-transform  m-auto">
       <a href="#">
         <img className="w-full rounded-t-lg h-[60%]" src={props.pic} alt="product image" />
       </a>

@@ -1,10 +1,28 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
-function GetStarted() {
+function GetStarted({setProgress}) {
+
+  useEffect(() => {
+             
+    setProgress(20);
+    setProgress(30);
+    setProgress(40);
+    setProgress(50);
+    setProgress(60);
+    setProgress(70);
+    setProgress(80);
+    setProgress(90);
+    setProgress(100);
+
+}, []);
+
   return (
     <div className=''>
-      <section className="gradient-form h-full w-[100vw] xl:w-[80vw] lg:w-[100vw]  m-auto  dark:bg-neutral-700">
-  <div className="container h-full p-10 ">
+      <section className="gradient-form h-full w-[100vw] xl:w-[80vw] lg:w-[100vw]  m-auto  dark:bg-neutral-700 m-auto">
+        <h1 className='text-blue-400 my-4 text-5xl font-bold'>Register</h1>
+        <h1 className='text-black my-4 text-xl font-bold'>Fill This Form Our representative Will Contact You Soon</h1>
+
+  <div className="container h-full p-10  my-2 m-auto">
     <div
       className="g-6 m-auto mx-4 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
       <div className="w-full">
@@ -12,27 +30,25 @@ function GetStarted() {
           className="block rounded-lg bg-white shadow-lg dark:bg-neutral-800">
           <div className="g-0 lg:flex lg:flex-wrap">
             <div className="px-4 md:px-0 lg:w-6/12">
-              <div className="md:mx-6 md:p-12">
+              <div className="md:mx-6 md:p-12 m-auto">
                 <div className="text-center">
                   <img
                     className="mx-auto w-48"
-                    src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                    src="https://firebasestorage.googleapis.com/v0/b/speakup-aa4f8.appspot.com/o/assests%2FSpeak%20Up.png?alt=media&token=35bbef35-844f-4905-804f-d42d3dd18750&_gl=1*3lxcjk*_ga*MjIzNDc0Mzc4LjE2OTgzOTM1ODI.*_ga_CW55HF8NVT*MTY5ODM5MzU4Mi4xLjEuMTY5ODM5MzcyMy4zOS4wLjA."
                     alt="logo" />
-                  <h4 className="mb-12 mt-1 pb-1 text-xl font-semibold">
-                    We are Speak-Up
-                  </h4>
+             
                 </div>
 
                 <form>
-                  <p className="mb-4">Please login to your account</p>
-                  <div className="relative mb-4" data-te-input-wrapper-init>
+                  <p className="mb-4">Please Register Yourself</p>
+                  <div className="relative mb-4 border" data-te-input-wrapper-init>
                     <input
                       type="text"
                       className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                       id="exampleFormControlInput1"
                       placeholder="Username" />
                     <label
-                      for="exampleFormControlInput1"
+                      htmlFor="exampleFormControlInput1"
                       className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
                       >Name
                     </label>
@@ -45,34 +61,34 @@ function GetStarted() {
                       id="exampleFormControlInput11"
                       placeholder="Password" />
                     <label
-                      for="exampleFormControlInput11"
+                      htmlFor="exampleFormControlInput11"
                       className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
                       >State
                     </label>
                   </div>
                        
-                  <div className="relative mb-4" data-te-input-wrapper-init>
+                  <div className="relative mb-4 border" data-te-input-wrapper-init>
                     <input
                       type="Number"
                       className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                       id="exampleFormControlInput11"
                       placeholder="Password" />
                     <label
-                      for="exampleFormControlInput11"
+                      htmlFor="exampleFormControlInput11"
                       className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
                       >Phone Number
                     </label>
                   </div>
                     
 
-                  <div className="relative mb-4" data-te-input-wrapper-init>
+                  <div className="relative mb-4 border" data-te-input-wrapper-init>
                     <input
                       type="Email"
                       className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                       id="exampleFormControlInput11"
                       placeholder="Password" />
                     <label
-                      for="exampleFormControlInput11"
+                      htmlFor="exampleFormControlInput11"
                       className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
                       >Email Address
                     </label>
@@ -83,7 +99,7 @@ function GetStarted() {
                       type="button"
                       data-te-ripple-init
                       data-te-ripple-color="light"
-                      style={{background: "linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)"}}
+                      style={{background: "linear-gradient(to right,#2196F3, #263238 )"}}
                         
                       >
                       Register
@@ -108,7 +124,7 @@ function GetStarted() {
 
             <div
               className="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
-              style={{background: "linear-gradient(to right, #2196F3, #d8363a, #dd3675, #b44593)"}}>
+              style={{background: "linear-gradient(to right, #2196F3, #263238)"}}>
               <div className="px-4 py-6 text-white md:mx-6 md:p-12">
                 <h4 className="mb-6 text-xl font-semibold">
                   We are more than just a Teacher

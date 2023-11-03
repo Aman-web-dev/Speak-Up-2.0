@@ -16,12 +16,8 @@ import Categories from './Pages/Categories'
 import Video from './Pages/videos'
 import Player from './Pages/Player'
 import { Routes, Route } from "react-router-dom";
-// import {
-//   createBrowserRouter,
-//   RouterProvider,
-//   Route,
-//   Link,
-// } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react'
+import TimeTable from './components/TimeTable'
 import ReviewCarousel from '../src/components/ReviewCarousel'
 import { useState, useEffect } from 'react'
 import About from './Pages/About'
@@ -29,37 +25,52 @@ import Pricing from './Pages/Pricing'
 import GetStarted from './Pages/GetStarted'
 import Faq from './Pages/Faq'
 import { BrowserRouter as Router } from 'react-router-dom'
+import LoadingBar from 'react-top-loading-bar'
+import Updates from './Pages/Updates'
 
 
 function App() {
+
+  const [progress, setProgress] = useState(0)
  
   return (
 
     <>
-<ComplexNavbar/>
+      <LoadingBar
+      // height='6'
+        color='#1976D2'
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
+ <ComplexNavbar setProgress={setProgress}/>
 <Router>   
     <Routes>
 
     <Route path="/" element={<div className='bg-white'>
     <Hero/>
     <Features/>
-    <CardHolder/>
+    {/* <CardHolder/> */}
     <Video/>
     <LanguageSlider/>
+    <TimeTable/>
     <Categories/>
     <Testimonials/>
+    <Analytics />
     <Popularity/>
     <ReviewCarousel />
-    <Info/>
+    <Free/>
+    {/* <Info/> */}
     </div>}/>
-          <Route path="/player" element={<Player />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/getstarted" element={<GetStarted />} />
-          <Route path="/faq" element={<Faq />} />
+          <Route path="/player" element={<Player setProgress={setProgress}/>} />
+          <Route path="/about" element={<About setProgress={setProgress}/>} />
+          <Route path="/pricing" element={<Pricing setProgress={setProgress}/>} />
+          <Route path="/getstarted" element={<GetStarted setProgress={setProgress}/>} />
+          <Route path="/faq" element={<Faq setProgress={setProgress}/>} />
+          <Route path="/updates" element={<Updates setProgress={setProgress}/>} />
+
       </Routes>
     </Router>
-    <Footer/>
+    <Footer/> 
 
     </>
   )

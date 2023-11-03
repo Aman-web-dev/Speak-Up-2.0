@@ -10,8 +10,13 @@ export default withMT({
 
  
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'poppins': ['Poppins', 'sans-serif'],
+        'roboto-mono': ['Roboto Mono', 'monospace'],
+      }
+    },
   },
-  plugins: [require("daisyui"),],
+  plugins: [require("daisyui")]
 })
 
